@@ -6,7 +6,7 @@ app = Flask(__name__)
 @app.route("/")
 def hello_world():
     name = os.environ.get("NAME", "Kenneth Summers")
-    return f"Hello {name} from a GCP Microservice done by your first name and your lastname!"
+    return f"Hello {name} from a GCP Microservice done by Kenneth Summers!"
 
 if __name__ == "__main__":
     # Cloud Run provides a PORT environment variable
