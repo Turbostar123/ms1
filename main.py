@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def hello_world():
-    name = os.environ.get("NAME", "World")
+    name = os.environ.get("NAME", "Kenneth Summers")
     return f"Hello {name} from a GCP Microservice done by your first name and your lastname!"
 
 if __name__ == "__main__":
